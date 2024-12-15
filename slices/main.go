@@ -1,11 +1,33 @@
 package main
 
-// We will be modifying this later
-func CreateSlice() {}
+import (
+	"fmt"
+	"slices"
+)
 
-func ModifySlice() {}
+func CreateSlice() []string {
+	slice := []string{"dog", "cat", "monkey"}
+	
+	return slice
+}
 
-func PopSliceValue() {}
+func ModifySlice(slice []string) []string {
+	if(len(slice) < 3){
+		return slice
+	} else {
+		slice[1] = "something else"
+		return slice
+	}
+}
 
-// Where we will run our code
-func main() {}
+func PopSliceValue(slice []string) []string {
+	slice = slices.Delete(slice, 2,3)
+	
+	return slice
+}
+
+func main() {
+	fmt.Println(CreateSlice())
+	fmt.Println(ModifySlice(CreateSlice()))
+	fmt.Println(PopSliceValue([]string{"1","2","3","4","5"}))
+}
