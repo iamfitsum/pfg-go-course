@@ -8,8 +8,8 @@ type Person struct {
 	Employed bool
 }
 
-func NewPerson(name string, age int, employed bool) Person {
-	return Person{name, age, employed}
+func NewPerson(name string, age int) Person {
+	return Person{Name: name, Age: age}
 }
 
 func UpdateNameByValue(person Person, newName string) Person {
@@ -26,7 +26,7 @@ func MakePersonEmployed(person *Person) {
 }
 
 func main() {
-	person := NewPerson("John", 30, false)
+	person := NewPerson("John", 30)
 	fmt.Println(person)
 
 	person = UpdateNameByValue(person, "Jane")
