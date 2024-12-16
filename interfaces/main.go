@@ -19,11 +19,11 @@ type Speaker interface{
 }
 
 func (p Person) Speak() string {
-	return fmt.Sprintf("Hi, My name is %s.", p.Name)
+	return fmt.Sprintf("Hi! My name is %s.", p.Name)
 }
 
 func (r Robot) Speak() string {
-	return fmt.Sprintf("Hello, I am a robot model %s.", r.Model)
+	return fmt.Sprintf("Hello, I am robot model %s.", r.Model)
 }
 
 func (a Animal) Speak() string {
