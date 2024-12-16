@@ -2,11 +2,10 @@ package main
 
 import "fmt"
 
-func CreateMap(key1 string, key2 string, val1 string, val2 string) (map[string]string, map[string]string) {
-	map1 := map[string]string{key1: val1}
-	map2 := map[string]string{key2: val2}
+func CreateMap(key1 string, key2 string, val1 string, val2 string) map[string]string {
+	theMap := map[string]string{key1: val1, key2: val2}
 	
-	return map1, map2
+	return theMap
 }
 
 func AddToMap(theMap map[string]int, newKey string, newVal int) map[string]int {
