@@ -1,11 +1,36 @@
 package main
 
-// We will be modifying this later
-func UpdateNameByValue() {}
+import "fmt"
 
-func UpdateNameByReference() {}
+type Person struct {
+	Name     string
+	Age      int
+	Employed bool
+}
 
-func MakePersonEmployed() {}
+func UpdateNameByValue(person Person, newName string) Person {
+	person.Name = newName
+	return person
+}
 
-// Where we will run our code
-func main() {}
+func UpdateNameByReference(person *Person, newName string) {
+	person.Name = newName
+}
+
+func MakePersonEmployed(person *Person) {
+	person.Employed = true
+}
+
+func main() {
+	person := Person{"John", 30, false}
+	fmt.Println(person)
+
+	person = UpdateNameByValue(person, "Jane")
+	fmt.Println(person)
+
+	UpdateNameByReference(&person, "Jack")
+	fmt.Println(person)
+
+	MakePersonEmployed(&person)
+	fmt.Println(person)
+}
