@@ -1,11 +1,27 @@
 package main
 
-// We will be modifying this later
-func CreateMap() {}
+import "fmt"
 
-func AddToMap() {}
+func CreateMap(key1 string, key2 string, val1 string, val2 string) (map[string]string, map[string]string) {
+	map1 := map[string]string{key1: val1}
+	map2 := map[string]string{key2: val2}
+	
+	return map1, map2
+}
 
-func DeleteFromMap() {}
+func AddToMap(theMap map[string]int, newKey string, newVal int) map[string]int {
+	theMap[newKey] = newVal
+	
+	return theMap
+}
 
-// Where we will run our code
-func main() {}
+func DeleteFromMap(theMap map[string]string, delKey string) map[string]string {
+	delete(theMap, delKey)
+	return theMap
+}
+
+func main() {
+	fmt.Println(CreateMap("key1", "key2", "val1", "val2"))
+	fmt.Println(AddToMap(map[string]int{"key1": 1, "key2": 2}, "key3", 3))
+	fmt.Println(DeleteFromMap(map[string]string{"key1": "val1", "key2": "val2"}, "key1"))
+}
