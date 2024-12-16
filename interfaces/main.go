@@ -1,11 +1,47 @@
 package main
 
-// We will be modifying this later
-type Person struct{}
+import "fmt"
 
-type Robot struct{}
+type Person struct{
+	Name string
+}
 
-type Animal struct{}
+type Robot struct{
+	Model string
+}
 
-// Where we will run our code
-func main() {}
+type Animal struct{
+	Name string
+}
+
+type Speaker interface{
+	Speak() string
+}
+
+func (p Person) Speak() string {
+	return fmt.Sprintf("Hi, My name is %s.", p.Name)
+}
+
+func (r Robot) Speak() string {
+	return fmt.Sprintf("Hello, I am a robot model %s.", r.Model)
+}
+
+func (a Animal) Speak() string {
+	return "this is a test"
+}
+
+func Introduce(s Speaker) {
+	fmt.Println(s.Speak())
+}
+
+func main() {
+	person := Person{Name: "Alice"}
+	robot := Robot{Model: "RX-78"}
+	animal := Animal{Name: "Cloe"}
+	
+	speakers := []Speaker{person, robot, animal}
+	
+	for _, s := range speakers {
+		Introduce(s)
+	}
+}
