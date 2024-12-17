@@ -132,7 +132,7 @@ func (b *Board) IsValidMove(move Move) (bool, string) {
 	dy := move.End.Y - move.Start.Y
 	
 	if abs(dx) != abs(dy) {
-		return false, "Move must be diagonal"
+		return false, "Moves must be diagonal"
 	}
 	
 	if piece.Type == Normal {
