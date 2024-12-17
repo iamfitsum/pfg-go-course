@@ -3,22 +3,22 @@
 This repository contains the code written while following the [Introduction to Go for Beginners](https://pfglabs.com/) course from PFG Labs. Each chapter demonstrates fundamental Go concepts with practical examples and concludes with a capstone project integrating everything learned in the course.
 
 ## 📖 Table of Contents
-- [Repository Structure](#-repository-structure)
-- [Chapters Overview](#-chapters-overview)
-  - [Main Program](#-main-program)
-  - [Chapter 1: Variables](#-chapter-1-variables)
-  - [Chapter 2: Slices](#-chapter-2-slices)
-  - [Chapter 3: Maps](#-chapter-3-maps)
-  - [Chapter 4: Structs](#-chapter-4-structs)
-  - [Chapter 5: Interfaces](#-chapter-5-interfaces)
-  - [Chapter 6: Capstone Project](#-chapter-6-capstone-project)
-- [Capstone Project: CLI Checkers Game](#-capstone-project-cli-checkers-game)
-- [Getting Started](#-getting-started)
-  - [Prerequisites](#-prerequisites)
-  - [Running Code for Each Chapter](#-running-code-for-each-chapter)
-  - [Running the Capstone Project](#-running-the-capstone-project)
-- [About the Course](#-about-the-course)
-- [Acknowledgements](#-acknowledgements)
+- [Repository Structure](#%EF%B8%8F-repository-structure)
+- [Chapters Overview](#%EF%B8%8F-chapters-overview)
+  - [Main Program](#️main-program)
+  - [Chapter 1: Variables](#️chapter-1-variables)
+  - [Chapter 2: Slices](#️chapter-2-slices)
+  - [Chapter 3: Maps](#️chapter-3-maps)
+  - [Chapter 4: Structs](#️chapter-4-structs)
+  - [Chapter 5: Interfaces](#️chapter-5-interfaces)
+  - [Chapter 6: Capstone Project](#️chapter-6-capstone-project)
+- [Capstone Project: CLI Checkers Game](#️-capstone-project-cli-checkers-game)
+- [Getting Started](#️-getting-started)
+  - [Prerequisites](#️prerequisites)
+  - [Running Code for Each Chapter](#️running-code-for-each-chapter)
+  - [Running the Capstone Project](#️running-the-capstone-project)
+- [About the Course](#️-about-the-course)
+- [Acknowledgements](#️-acknowledgements)
 
 ## 🗂️ Repository Structure
 
