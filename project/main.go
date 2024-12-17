@@ -77,8 +77,7 @@ func (b *Board) VisualizeBoard() {
 	fmt.Println("  +---+---+---+---+---+---+---+---+")
 
 	for y:=0; y<8; y++ {
-		
-		fmt.Printf("%d |", y) // print the y number
+		fmt.Printf("%d |", y)
 		for x:=0; x<8; x++ {
 			if b.Grid[y][x] == nil { // this space is empty
 				if (x+y)%2 == 0 {
